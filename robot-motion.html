@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robot Motion | Zero G Robots</title>
+  <meta name="description" content="The robot has 6 degrees of freedom: 3 linear, 3 rotational." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">Zero<span>G</span> Robots</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="need.html">Need</a></li>
+      <li><a href="challenge.html">Challenge</a></li>
+      <li class="dropdown">
+        <span class="dropdown-label">Solution ▾</span>
+        <div class="dropdown-menu">
+          <a href="design-requirements.html">Design Requirements</a>
+          <a href="robot-design.html">Robot Design</a>
+          <a href="robot-motion.html">Robot Motion</a>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="page-header">
+    <h1>The robot has 6 degrees of freedom: 3 linear, 3 rotational</h1>
+  </div>
+  <div class="container">
+    <div class="motion-grid">
+
+      <div class="motion-card">
+        <h3>Robot Linear Motion</h3>
+        <img src="https://img1.wsimg.com/isteam/ip/49e03f3f-721f-4ad8-b500-3a91925020a6/Robot%20linear%20motion.png/:/cr=t:2.83%25,l:0%25,w:100%25,h:94.34%25/rs=w:600,h:300,cg:true"
+             alt="Robot linear motion diagram" />
+        <p>The robot moves by using 2 or 4 nozzles on the cube face ABCD and stops by using the opposite nozzles on cube face EFGH (not shown).</p>
+      </div>
+
+      <div class="motion-card">
+        <h3>Robot Rotation</h3>
+        <img src="https://img1.wsimg.com/isteam/ip/49e03f3f-721f-4ad8-b500-3a91925020a6/Robot%20rotation.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,h:300,cg:true"
+             alt="Robot rotation diagram" />
+        <p>The robot can rotate along all 3 axes. To rotate clockwise along the x-axis, it uses nozzles xc1 on ABCD and xc2 on EFGH (not shown). Similarly for rotation along y- and z-axis.</p>
+      </div>
+
+      <div class="motion-card">
+        <h3>Fuel Optimized Mode</h3>
+        <img src="https://img1.wsimg.com/isteam/ip/49e03f3f-721f-4ad8-b500-3a91925020a6/robot%20motion%20with%20coast.png/:/cr=t:2.83%25,l:0%25,w:100%25,h:94.34%25/rs=w:600,h:300,cg:true"
+             alt="Fuel optimized motion" />
+        <p>In fuel optimized mode, the robot initiates movement with a small thrust, then coasts for most of the duration, before firing the opposite thrusters to stop the motion.</p>
+      </div>
+
+      <div class="motion-card">
+        <h3>Speed Optimized Mode</h3>
+        <img src="https://img1.wsimg.com/isteam/ip/49e03f3f-721f-4ad8-b500-3a91925020a6/robot%20motion%20NO%20coast.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,h:300,cg:true"
+             alt="Speed optimized motion" />
+        <p>In speed optimized mode, the robot doesn't coast at all. Instead, it fires the forward thrusters for the first half of the motion and then fires the opposite thrusters to stop.</p>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>Copyright &copy; 2020 Zero G Robots &mdash; All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
