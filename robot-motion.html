@@ -16,7 +16,6 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="need.html">Need</a></li>
       <li><a href="challenge.html">Challenge</a></li>
-      <li><a href="about.html">About</a></li>
       <li class="dropdown">
         <span class="dropdown-label">Solution ▾</span>
         <div class="dropdown-menu">
@@ -25,6 +24,7 @@
           <a href="robot-motion.html">Robot Motion</a>
         </div>
       </li>
+      <li><a href="about.html">About</a></li>
     </ul>
   </nav>
 </header>
@@ -36,22 +36,22 @@
   <div class="container">
     <div class="motion-grid">
       <div class="motion-card">
-        <h3>Robot Linear Motion</h3>
+        <div class="card-title" style="padding:16px 16px 0">Robot Linear Motion</div>
         <img src="images/motion-linear.webp" alt="Robot linear motion diagram" />
         <p>The robot moves by using 2 or 4 nozzles on the cube face ABCD and stops by using the opposite nozzles on cube face EFGH (not shown).</p>
       </div>
       <div class="motion-card">
-        <h3>Robot Rotation</h3>
+        <div class="card-title" style="padding:16px 16px 0">Robot Rotation</div>
         <img src="images/motion-rotation.webp" alt="Robot rotation diagram" />
         <p>The robot can rotate along all 3 axes. To rotate clockwise along the x-axis, it uses nozzles xc1 on ABCD and xc2 on EFGH (not shown). Similarly for rotation along y- and z-axis.</p>
       </div>
       <div class="motion-card">
-        <h3>Fuel Optimized Mode</h3>
+        <div class="card-title" style="padding:16px 16px 0">Fuel Optimized Mode</div>
         <img src="images/motion-fuel.webp" alt="Fuel optimized motion" />
         <p>In fuel optimized mode, the robot initiates movement with a small thrust, then coasts for most of the duration, before firing the opposite thrusters to stop the motion.</p>
       </div>
       <div class="motion-card">
-        <h3>Speed Optimized Mode</h3>
+        <div class="card-title" style="padding:16px 16px 0">Speed Optimized Mode</div>
         <img src="images/motion-speed.webp" alt="Speed optimized motion" />
         <p>In speed optimized mode, the robot doesn&rsquo;t coast at all. Instead, it fires the forward thrusters for the first half of the motion and then fires the opposite thrusters to stop.</p>
       </div>
